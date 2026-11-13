@@ -2,6 +2,7 @@
 import csv
 import json
 from pathlib import Path
+import xml.etree.ElementTree as ET
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +49,27 @@ class DemoKitTests(unittest.TestCase):
         with (ROOT / "tests/casos_v2.csv").open(encoding="utf-8-sig",newline="") as f:
             rows=list(csv.DictReader(f))
         self.assertEqual(18,len(rows))
+
+    def test_multiagent_svg_is_valid_xml(self):
+        for n in range(10, 14):
+            matches = list((ROOT / "assets/carousel").glob(f"{n}-*.svg"))
+            self.assertEqual(1, len(matches))
+            with self.subTest(path=matches[0].name):
+                root = ET.parse(matches[0]).getroot()
+                self.assertEqual("{http://www.w3.org/2000/svg}svg", root.tag)
+                self.assertGreater(matches[0].stat().st_size, 5000)
+
+    def test_reproduction_runbook_and_branding(self):
+        for path in ["docs/09-runbook-paso-a-paso.md",
+                     "docs/10-guion-del-ponente.md",
+                     "assets/brand/CopilotStudio_scalable.svg",
+                     "assets/brand/README.md"]:
+            with self.subTest(path=path):
+                self.assertTrue((ROOT / path).is_file())
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("docs/09-runbook-paso-a-paso.md", readme)
+        for n in range(10, 14):
+            self.assertRegex(readme, fr"assets/carousel/{n}-[^)]+\\.svg")
 
     def test_mcp_example_valid(self):
         with (ROOT / ".vscode/mcp.example.json").open(encoding="utf-8") as f:
