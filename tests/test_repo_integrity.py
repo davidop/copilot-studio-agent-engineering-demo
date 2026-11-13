@@ -59,6 +59,16 @@ class DemoKitTests(unittest.TestCase):
                 self.assertEqual("{http://www.w3.org/2000/svg}svg", root.tag)
                 self.assertGreater(matches[0].stat().st_size, 5000)
 
+    def test_rendered_png_carousel(self):
+        import struct
+        for n in range(10, 14):
+            pngs = list((ROOT / "assets/carousel").glob(f"{n}-*.png"))
+            self.assertEqual(1, len(pngs))
+            with pngs[0].open("rb") as fp:
+                header = fp.read(24)
+            self.assertEqual(b"\\x89PNG\\r\\n\\x1a\\n", header[:8])
+            self.assertEqual((1200, 1500), struct.unpack(">II", header[16:24]))
+
     def test_reproduction_runbook_and_branding(self):
         for path in ["docs/09-runbook-paso-a-paso.md",
                      "docs/10-guion-del-ponente.md",
