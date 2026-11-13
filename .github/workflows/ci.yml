@@ -1,4 +1,4 @@
-name: Demo kit CI (offline)
+name: Validate ElfoDesk Multi-Agent kit (offline)
 on:
   push:
   pull_request:
@@ -14,9 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate acceptance matrix
+      - name: Validate multi-agent specification and evaluation dataset
+        run: python multiagent/validate.py
+      - name: Validate legacy scenario matrix
         run: python tests/validar_matriz.py
-      - name: Local unit tests
+      - name: Unit tests of repository integrity
         run: python -m unittest discover -s tests -p 'test_*.py' -v
-# Offline checks ONLY. Not a Copilot Studio cloud evaluation.
-
+# Only validates static samples and CSVs; NOT evaluation of deployed Copilot Studio agents.
