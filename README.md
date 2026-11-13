@@ -5,7 +5,7 @@
 
 > **Estado:** repositorio de preparación, no un tenant desplegado. Los tres agentes y su conexión deben crearse previamente en Copilot Studio DEV. Los CSV contienen escenarios **sintéticos**, no resultados medidos. La edición YAML de la extensión clásica corresponde al **Standard harness** y queda como laboratorio legado, **no** forma parte de esta demo.
 
-![Arquitectura multiagente en 20 minutos](assets/carousel/10-multiagent-arquitectura.png)
+![ElfoDesk: arquitectura multiagente navideña](assets/carousel/originals/10-arquitectura-original.jpg)
 
 ## 🎯 Agenda definitiva — 20 minutos
 
@@ -49,15 +49,21 @@ Son agentes separados de **Microsoft Copilot harness** (nombre actual del antigu
 
 Consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md) para los pasos exactos, prompts, controles de seguridad y resolución de problemas.
 
-## 🖼️ Galería de arquitectura (branding claro y navideño)
+## 🖼️ Carrusel original · Microsoft + Navidad
 
-| Arquitectura multiagente | Workflow de la demo |
+La galería principal recupera los **cuatro diseños ilustrados originales** elegidos para la sesión: fondos claros, colores Microsoft, motivos navideños y jerarquía visual pensada para presentar en 20 minutos.
+
+| 1. Arquitectura multiagente | 2. Flujo de desarrollo y MCP |
 |:---:|:---:|
-| [![Orquestador y especialistas](assets/carousel/10-multiagent-arquitectura.png)](assets/carousel/10-multiagent-arquitectura.svg) | [![Desarrollo mediante MCP](assets/carousel/11-multiagent-mcp.png)](assets/carousel/11-multiagent-mcp.svg) |
-| **Evaluación de delegación** | **Quality gate** |
-| [![Agent Evaluation](assets/carousel/12-multiagent-evaluacion.png)](assets/carousel/12-multiagent-evaluacion.svg) | [![Quality Gate](assets/carousel/13-multiagent-quality-gate.png)](assets/carousel/13-multiagent-quality-gate.svg) |
+| [![ElfoDesk Orchestrator, Security y Knowledge](assets/carousel/originals/10-arquitectura-original.jpg)](assets/carousel/originals/10-arquitectura-original.jpg) | [![GitHub Copilot, MCP, pruebas y evaluación](assets/carousel/originals/11-flujo-mcp-original.jpg)](assets/carousel/originals/11-flujo-mcp-original.jpg) |
+| **3. Agent Evaluation** | **4. Quality Gate** |
+| [![Escenarios de evaluación y delegación](assets/carousel/originals/12-evaluacion-original.jpg)](assets/carousel/originals/12-evaluacion-original.jpg) | [![Criterios de aprobación y trazabilidad](assets/carousel/originals/13-quality-gate-original.jpg)](assets/carousel/originals/13-quality-gate-original.jpg) |
 
-Las **cuatro láminas PNG de 1200 × 1500 píxeles están publicadas en GitHub**, con fondos claros, azul/cian/violeta y motivos navideños. Sus **fuentes SVG editables** conservan el icono vectorial de Copilot Studio; GitHub Actions genera los PNG automáticamente desde ellas. Los PNG ilustrados originales generados en ChatGPT son distintos de estas exportaciones SVG. [Diseño e identidad visual](assets/carousel/README.md) · [Procedencia del icono](assets/brand/README.md) · [Pipeline de exportación](.github/workflows/render-carousel.yml).
+Estas ilustraciones son **JPG optimizados de las imágenes generadas originalmente**, sin sustituir su composición por diagramas genéricos. Representan **arquitecturas y objetivos**, no ejecuciones verificadas en un tenant ni scores reales. Los símbolos y denominaciones de producto son recursos visuales; la demo no está patrocinada por Microsoft.
+
+### Diagramas técnicos editables
+
+Mantenemos separadamente los [SVG versionados y sus PNG exportados automáticamente](assets/carousel/README.md) para documentación técnica, cambios futuros y slides de arquitectura. Las ilustraciones anteriores son la **versión visual preferente del README**.
 
 ## 📂 Material reproducible
 
