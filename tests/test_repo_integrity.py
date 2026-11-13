@@ -93,8 +93,10 @@ class DemoKitTests(unittest.TestCase):
                 self.assertTrue((ROOT / path).is_file())
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("docs/09-runbook-paso-a-paso.md", readme)
-        for n in range(10, 14):
-            self.assertIn(f"assets/carousel/{n}-", readme)
+        expected = ["10-arquitectura-original.jpg", "11-flujo-mcp-original.jpg",
+                    "12-evaluacion-original.jpg", "13-quality-gate-original.jpg"]
+        for name in expected:
+            self.assertIn(f"assets/carousel/originals/{name}", readme)
 
     def test_mcp_example_valid(self):
         with (ROOT / ".vscode/mcp.example.json").open(encoding="utf-8") as f:
