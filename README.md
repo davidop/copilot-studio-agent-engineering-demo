@@ -5,7 +5,7 @@
 
 > **Estado:** repositorio de preparación, no un tenant desplegado. Los tres agentes y su conexión deben crearse previamente en Copilot Studio DEV. Los CSV contienen escenarios **sintéticos**, no resultados medidos. La edición YAML de la extensión clásica corresponde al **Standard harness** y queda como laboratorio legado, **no** forma parte de esta demo.
 
-![Arquitectura multiagente en 20 minutos](assets/carousel/10-multiagent-arquitectura.svg)
+![Arquitectura multiagente en 20 minutos](assets/carousel/10-multiagent-arquitectura.png)
 
 ## 🎯 Agenda definitiva — 20 minutos
 
@@ -53,11 +53,11 @@ Consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md) para lo
 
 | Arquitectura multiagente | Workflow de la demo |
 |:---:|:---:|
-| [![Orquestador y especialistas](assets/carousel/10-multiagent-arquitectura.svg)](assets/carousel/10-multiagent-arquitectura.svg) | [![Desarrollo mediante MCP](assets/carousel/11-multiagent-mcp.svg)](assets/carousel/11-multiagent-mcp.svg) |
+| [![Orquestador y especialistas](assets/carousel/10-multiagent-arquitectura.png)](assets/carousel/10-multiagent-arquitectura.svg) | [![Desarrollo mediante MCP](assets/carousel/11-multiagent-mcp.png)](assets/carousel/11-multiagent-mcp.svg) |
 | **Evaluación de delegación** | **Quality gate** |
-| [![Agent Evaluation](assets/carousel/12-multiagent-evaluacion.svg)](assets/carousel/12-multiagent-evaluacion.svg) | [![Quality Gate](assets/carousel/13-multiagent-quality-gate.svg)](assets/carousel/13-multiagent-quality-gate.svg) |
+| [![Agent Evaluation](assets/carousel/12-multiagent-evaluacion.png)](assets/carousel/12-multiagent-evaluacion.svg) | [![Quality Gate](assets/carousel/13-multiagent-quality-gate.png)](assets/carousel/13-multiagent-quality-gate.svg) |
 
-Las cuatro ilustraciones SVG están **publicadas en GitHub**, con fondo claro, degradados azul/cian/violeta, copos y detalles navideños. Integran el icono vectorial de Copilot Studio y están preparadas para reutilizarse en presentaciones. Las versiones PNG generadas por separado durante la conversación **no están alojadas en GitHub**; estos SVG son las versiones editables del repositorio. [Diseño e identidad visual](assets/carousel/README.md) · [Procedencia del icono](assets/brand/README.md).
+Las **cuatro láminas PNG de 1200 × 1500 píxeles están publicadas en GitHub**, con fondos claros, azul/cian/violeta y motivos navideños. Sus **fuentes SVG editables** conservan el icono vectorial de Copilot Studio; GitHub Actions genera los PNG automáticamente desde ellas. Los PNG ilustrados originales generados en ChatGPT son distintos de estas exportaciones SVG. [Diseño e identidad visual](assets/carousel/README.md) · [Procedencia del icono](assets/brand/README.md) · [Pipeline de exportación](.github/workflows/render-carousel.yml).
 
 ## 📂 Material reproducible
 
