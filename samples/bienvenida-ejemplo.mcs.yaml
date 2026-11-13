@@ -1,0 +1,11 @@
+# EJEMPLO EDUCATIVO, NO export real. No sobrescribir automáticamente un topic clonado.
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnConversationStart
+  id: main
+  actions:
+    - kind: SendActivity
+      id: sendMessage_DemoWelcome
+      activity:
+        text:
+          - "¡Bienvenido a ElfoDesk! Soy tu ayudante de soporte IT. Si has perdido un dispositivo o sospechas de un incidente de seguridad, dímelo. Nunca compartas contraseñas ni códigos MFA aquí."
