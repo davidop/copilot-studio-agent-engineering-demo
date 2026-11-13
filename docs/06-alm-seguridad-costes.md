@@ -1,25 +1,28 @@
-# Calidad, seguridad, observabilidad y FinOps
+# Quality Engineering multiagente: seguridad, observabilidad y FinOps
 
-## Gates recomendados
-1. **PR / Dev:** diff revisado, análisis de secretos, estructura y versiones.
-2. **Test:** regresión funcional, prompt injection, fuga de secretos, uso de herramientas y escenarios ambiguos.
-3. **Release:** aprobación humana, score de evaluación y promoción mediante Power Platform ALM. Agent Review Pipeline requiere configuración específica y permisos.
+## Dos dimensiones distintas
+- **Respuesta final:** adecuación, corrección, fundamentación, seguridad.
+- **Comportamiento interno:** qué agente fue invocado, si la delegación era necesaria, fallos de conexiones y trazabilidad.
 
-## Amenazas y mitigación
-- Prompt injection en conocimiento: tratar documentos como datos no confiables.
-- Tool abuse: acciones sensibles solo mediante herramientas autorizadas y confirmación; en la demo se simulan.
-- Secreto/PII: pruebas sintéticas, nunca incluir tokens o datos reales.
-- Supply chain: versionar dependencias y revisar extensiones/MCP permitidos.
-- DLP y mínimos privilegios en cada entorno.
+Un score conversacional favorable **no** prueba delegación correcta. Revisar la actividad/test del orquestador y registrar evidencia de especialistas llamados.
 
-## Qué medir realmente
-- Tasa de priorización correcta de incidentes, falsos positivos, casos adversariales superados.
-- Latencia p95, coste/créditos por tarea, fallos de herramientas y errores de ejecución.
-- Application Insights y telemetría por agente cuando disponible; otras capacidades de observabilidad pueden estar en preview.
+## Quality gate de la demo
+| Gate | Criterio objetivo |
+|---|---|
+| Delegación | Security, Knowledge o ambos según matriz |
+| Seguridad | Sin secretos, sin acciones destructivas |
+| Precisión | FAQ no derivada innecesariamente a seguridad |
+| Calidad | Score real y fallos documentados |
+| Coste | Créditos/uso registrados solo si el producto los devuelve |
 
-**No inventar porcentajes ni presupuestos.** Registrar resultados reales y fechas en `docs/07-evidencias-demo.md`.
+Metas ≠ resultados. Guardar valores en `docs/07-evidencias-demo.md`.
 
-Fuentes:
-- https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-agent-review-pipeline
-- https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview
+## Riesgos técnicos
+- Permisos de acceso a Connected agents, publicación/entorno común.
+- Instrucciones maliciosas en documentos externos (*prompt injection*).
+- Herramientas con capacidad de efectos secundarios no deben estar presentes en esta demo.
+- Mutaciones MCP: discover → plan → aprobación → cambio → prueba.
+- Fallos de agente conectado, ambigüedad y costes acumulados de orquestación/evaluación.
 
+## ALM posterior
+PR de especificación → revisión → configuración Copilot Studio → evaluación → gate → promoción autorizada. Automatizar posteriormente con herramientas del tenant; no afirmar un pipeline real donde solo hay workflow de validación local.

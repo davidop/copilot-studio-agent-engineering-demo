@@ -1,27 +1,28 @@
-# Spec-driven Development — ElfoDesk Security Triage v2
+# Spec-driven Development — ElfoDesk Multi-Agent
 
-## Problema
-El agente responde FAQ, pero el enrutamiento de incidencias críticas no es suficientemente verificable ni versionado.
+## Objetivo
+El orquestador debe **delegar** de forma verificable al especialista adecuado, responder con seguridad y preservar el comportamiento de FAQ. Ya no basta con modificar un topic YAML del Standard harness.
 
-## Alcance
-Incluye: mensajes, temas y orientaciones de seguridad **ficticias**. Excluye: bloqueo real de cuentas, borrado de dispositivos, envío de emails, tickets y publicación automática.
+## Componentes
+- [Contrato de delegación](../multiagent/delegation-contract.md)
+- [Instrucciones Orchestrator](../multiagent/agents/orchestrator.md)
+- [Security Agent](../multiagent/agents/security.md)
+- [Knowledge Agent](../multiagent/agents/knowledge.md)
+- [Matriz de 8 escenarios](../multiagent/evaluation/delegation-matrix.csv)
 
 ## Requisitos
-- RF-01: Robo o pérdida de dispositivo → canal de soporte/seguridad urgente.
-- RF-02: Sospecha de compromiso de credenciales → pasos seguros, nunca solicitar contraseñas, MFA, tokens ni cookies.
-- RF-03: FAQ inocuas → resolución normal sin falso escalado.
-- RF-04: Ambigüedad → aclarar antes de acusar una brecha.
-- RF-05: Tono navideño sin trivializar incidentes.
-- RNF-01: Todos los cambios en Git y entorno DEV.
-- RNF-02: Validar YAML **real** con la extensión oficial; no generar IDs o referencias arbitrariamente.
-- RNF-03: Ninguna operación sensible ni publicación sin autorización.
+1. Robo/pérdida o compromiso de cuenta → Security Agent.
+2. Horario y FAQ → Knowledge Agent.
+3. Consulta mixta (robo + recuperación + horario) → ambos especialistas cuando sea necesario.
+4. Ambigüedad → aclaración, sin escalado injustificado.
+5. Nunca solicitar secretos ni realizar acciones reales en dispositivos/identidades.
+6. Cambios autorizados, revisados y trazados; registro de evaluación con fecha.
 
-## Criterios de aceptación (metas, no resultados)
-- 5/5 casos urgentes correctamente priorizados.
-- 3/3 casos de secretos manejados de forma segura.
-- 4/4 FAQ respondidas sin falsos positivos.
-- Sin errores del esquema; diff revisado; evidencias de prueba y rollback.
+## Criterios de aceptación propuestos (no resultados)
+- Traces muestran el/los agentes esperados para casos 1, 2 y 3.
+- La respuesta no solicita ni expone contraseñas, MFA o tokens.
+- Sin falso positivo en «he perdido el puntero».
+- El test set de Evaluate devuelve puntuaciones reales que se pueden justificar.
+- Se conserva instrucción anterior para rollback si la mejora degrada resultados.
 
-## Proceso
-Inspeccionar workspace real → proponer diff mínimo → revisión → validación → Apply a DEV → comprobar resultado → PR.
-
+**No se asume formato YAML para Microsoft Copilot harness**; las modificaciones se realizan por las superficies oficiales disponibles, incluyendo MCP, con permiso del usuario.

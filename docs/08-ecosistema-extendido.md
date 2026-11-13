@@ -1,11 +1,12 @@
-# Extensiones opcionales: Agent Framework y Foundry
+# Extensiones posteriores al directo
 
-**Microsoft Agent Framework** ofrece un modelo pro-code para agentes, herramientas, workflows, sesiones y hosting. Las skills de desarrollo para .NET/Python guían al **asistente que escribe código**; no son equivalentes a skills ejecutadas por un agente de Copilot Studio.
+El camino principal es **Microsoft Copilot harness multiagente**, no Standard harness. El código YAML del laboratorio anterior está conservado en [legacy-standard](../legacy-standard/README.md).
 
-**Microsoft Foundry** incluye servicios para el ciclo de vida de agentes y capacidades en GA o preview según la función. Integrar Foundry como demo adicional exige otro entorno, permisos y pruebas previas.
+Posibles ampliaciones:
+- **Agent Framework .NET/Python:** implementaciones pro-code y evaluación de workflows.
+- **Foundry Agent Service:** evaluación o interoperabilidad entre runtimes, según soporte/preview del momento.
+- **MCP como herramienta del agente:** distinto del MCP oficial de Copilot Studio utilizado por VS Code.
+- **A2A entre plataformas:** tratar como un proyecto independiente que exige compatibilidad verificada.
+- **API .NET de clasificación:** ejemplo no desplegado, que requeriría HTTPS y autenticación para conectarlo desde cloud.
 
-## Bonus .NET 10
-La carpeta `bonus-dotnet-api` define una **API local de triage determinista**. No bloquea cuentas ni hace llamadas a servicios. Para conectarla a Copilot Studio se requiere publicarla en HTTPS con autenticación, controles y conector autorizado. **El localhost no es accesible desde Copilot Studio cloud.**
-
-En la charla de **20 minutos**, no ejecutar este bonus: reservar el directo para **YAML + IA + Git + Apply + MCP + evaluación**. Agent Framework, Foundry y la API .NET son material de profundización posterior.
-
+Para 20 minutos priorizar **delegación real → VS Code + MCP → evaluación → quality gate**.
