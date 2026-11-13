@@ -1,7 +1,7 @@
 # 🎄 Del low-code al pro-code: ElfoDesk Multi-Agent
 ## Microsoft Copilot harness · GitHub Copilot + VS Code · MCP · Agent Evaluation
 
-**Demo técnica de 20 minutos:** crear y evolucionar un sistema **multiagente** en Copilot Studio. Un orquestador delega consultas a **Security Agent** y **Knowledge Agent**, GitHub Copilot actúa desde VS Code mediante el **MCP oficial**, y una **evaluación de conversaciones con revisión de trazas** mide la calidad y la delegación real.
+**Demo técnica de 20 minutos:** mostrar y evolucionar un sistema **multiagente** en Copilot Studio. Un orquestador delega consultas a **Security Agent** y **Knowledge Agent**, GitHub Copilot actúa desde VS Code mediante el **MCP oficial**, y una **evaluación de conversaciones con revisión de trazas** mide la calidad y la delegación real.
 
 > **Estado:** repositorio de preparación, no un tenant desplegado. Los tres agentes y su conexión deben crearse previamente en Copilot Studio DEV. Los CSV contienen escenarios **sintéticos**, no resultados medidos. La edición YAML de la extensión clásica corresponde al **Standard harness** y queda como laboratorio legado, **no** forma parte de esta demo.
 
@@ -21,6 +21,8 @@
 
 **Lo diferencial:** demostrar que se invocaron los agentes correctos. Una respuesta buena **no demuestra delegación**; necesitamos traza de actividad, además del score de evaluación.
 
+**Guía para reproducirla:** [**Runbook paso a paso — preparar, conectar, probar y evaluar**](docs/09-runbook-paso-a-paso.md) · [**Guion con lo que decir en cada minuto**](docs/10-guion-del-ponente.md)
+
 [Guion de 20 minutos](docs/02-guion-directo.md) · [Checklist técnico](docs/00-checklist-20min.md) · [Sistema multiagente completo](multiagent/README.md)
 
 ## 🧠 Tres componentes con responsabilidades claras
@@ -35,7 +37,19 @@ Son agentes separados de **Microsoft Copilot harness** (nombre actual del antigu
 
 **Conectividad:** preparar los dos especialistas en el mismo entorno, publicarlos y habilitar su conexión; conectar después desde el agente principal. Confirmar permisos de todos los agentes para quienes participen en la demo.
 
-## 🖼️ Nueva galería de arquitectura (multiagente)
+## ⚙️ Cómo reproducir la demo
+
+1. **Preparar DEV** con Microsoft Copilot harness y permisos de publicación/connected agents.
+2. Crear y publicar **Security Agent** y **Knowledge Agent** con las [especificaciones ficticias](multiagent/agents/); configurarlos como conectables.
+3. Crear **ElfoDesk Orchestrator**, vincular ambos especialistas en **Build → Connected agents** y revisar permisos.
+4. Ensayar tres consultas y comprobar **delegación observable** desde Preview (seguridad, FAQ y consulta mixta).
+5. Conectar **GitHub Copilot en VS Code** al servidor **Copilot Studio MCP** y confirmar DEV / herramientas disponibles antes de modificar nada.
+6. Preparar **Evaluate** con cinco casos, ejecutar un ensayo y registrar resultados **reales** y trazas por separado.
+7. Ejecutar el guion de 20 minutos con pantallas y evaluación ya abiertas; usar un vídeo del ensayo claramente identificado como respaldo.
+
+Consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md) para los pasos exactos, prompts, controles de seguridad y resolución de problemas.
+
+## 🖼️ Galería de arquitectura (branding claro y navideño)
 
 | Arquitectura multiagente | Workflow de la demo |
 |:---:|:---:|
@@ -43,7 +57,7 @@ Son agentes separados de **Microsoft Copilot harness** (nombre actual del antigu
 | **Evaluación de delegación** | **Quality gate** |
 | [![Agent Evaluation](assets/carousel/12-multiagent-evaluacion.svg)](assets/carousel/12-multiagent-evaluacion.svg) | [![Quality Gate](assets/carousel/13-multiagent-quality-gate.svg)](assets/carousel/13-multiagent-quality-gate.svg) |
 
-Los SVG son diagramas vectoriales editables en el repositorio. Los PNG navideños conceptuales se han generado también durante la preparación, pero **no forman parte de estos enlaces GitHub**.
+Las cuatro ilustraciones SVG están **publicadas en GitHub**, con fondo claro, degradados azul/cian/violeta, copos y detalles navideños. Integran el icono vectorial de Copilot Studio y están preparadas para reutilizarse en presentaciones. Las versiones PNG generadas por separado durante la conversación **no están alojadas en GitHub**; estos SVG son las versiones editables del repositorio. [Diseño e identidad visual](assets/carousel/README.md) · [Procedencia del icono](assets/brand/README.md).
 
 ## 📂 Material reproducible
 
@@ -52,7 +66,7 @@ Los SVG son diagramas vectoriales editables en el repositorio. Los PNG navideño
 - [Prompts para el cliente MCP](multiagent/prompts/)
 - [Ocho escenarios multiagente](multiagent/evaluation/delegation-matrix.csv)
 - [CSV para preparar Agent Evaluation](multiagent/evaluation/copilot-harness-conversations.csv) · [Rúbrica](multiagent/evaluation/rubric.md)
-- [Guion](docs/02-guion-directo.md) · [Evidencias](docs/07-evidencias-demo.md)
+- [**Runbook de ejecución**](docs/09-runbook-paso-a-paso.md) · [Guion para el ponente](docs/10-guion-del-ponente.md) · [Evidencias](docs/07-evidencias-demo.md)
 - [Laboratorio legado Standard harness](legacy-standard/README.md), mantenido como referencia técnica
 
 ## ✅ Validación local
