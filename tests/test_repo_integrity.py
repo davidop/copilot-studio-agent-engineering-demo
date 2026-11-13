@@ -69,6 +69,21 @@ class DemoKitTests(unittest.TestCase):
             self.assertEqual(bytes.fromhex("89504e470d0a1a0a"), header[:8])
             self.assertEqual((1200, 1500), struct.unpack(">II", header[16:24]))
 
+    def test_original_holiday_carousel(self):
+        images = [
+            "10-arquitectura-original.jpg",
+            "11-flujo-mcp-original.jpg",
+            "12-evaluacion-original.jpg",
+            "13-quality-gate-original.jpg",
+        ]
+        for name in images:
+            path = ROOT / "assets" / "carousel" / "originals" / name
+            with self.subTest(name=name):
+                self.assertTrue(path.is_file())
+                self.assertGreater(path.stat().st_size, 100_000)
+                with path.open("rb") as handle:
+                    self.assertEqual(bytes.fromhex("ffd8ff"), handle.read(3))
+
     def test_reproduction_runbook_and_branding(self):
         for path in ["docs/09-runbook-paso-a-paso.md",
                      "docs/10-guion-del-ponente.md",
