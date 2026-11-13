@@ -1,74 +1,71 @@
-# 🎄 Del low-code al pro-code: Copilot Studio + Agent Engineering
+# 🎄 Del low-code al pro-code a golpe de villancico
+## Copilot Studio + VS Code + IA + MCP + Evaluación · **20 minutos**
 
-Demo técnica: **Copilot Studio → VS Code → GitHub Copilot / Claude Code → SDD + Git → evaluación → ALM**, con un segundo recorrido de **Copilot Studio MCP** y Microsoft Copilot harness.
+![Arquitectura de la demo de 20 minutos](assets/carousel/00-demo-20min.svg)
 
-> **Estado:** material de demostración y laboratorio **ficticio**, no un agente exportado de ningún tenant. Publicado para compartir las buenas prácticas de ingeniería; ninguna acción del repositorio toca Azure, Microsoft 365 o Copilot Studio por sí sola.
+**Una historia, un agente y un resultado verificable.** Vamos a evolucionar **ElfoDesk**, un agente ficticio de soporte IT construido en Copilot Studio (**Standard harness**), editar su definición en Visual Studio Code con asistencia de IA, revisar el cambio con Git y **Apply** en DEV. Después usaremos **Copilot Studio MCP** para descubrir recursos desde VS Code y una **evaluación real** para medir si el cambio funciona.
 
-## Arquitectura
+> **Estado:** kit de preparación con datos sintéticos. No contiene un agente exportado de un tenant ni resultados de evaluación cloud. Las funciones MCP disponibles dependen del cliente, del entorno y de los permisos. Si MCP no ofrece evaluación, se usa el evaluador de Copilot Studio para Standard harness, preparado de antemano.
 
-![Arquitectura general](assets/carousel/01-arquitectura.svg)
+## 🎯 Agenda del directo — 20 minutos
 
-En la primera ruta usamos un **agente de Copilot Studio con Standard harness** y su extensión oficial de VS Code para editar YAML. En la segunda, un **agente independiente con Microsoft Copilot harness** y el servidor MCP oficial para inspección, gestión y evaluación según los permisos disponibles. **No confundas los dos harnesses.**
+| Minutos | Bloque | Qué se ve |
+|---|---|---|
+| **0–2** | Problema | Consulta de robo de portátil y respuesta inicial reproducible |
+| **2–4** | Low-code → pro-code | Tema de Copilot Studio y YAML **ya clonado** en VS Code |
+| **4–8** | SDD + IA + Git | Cambio pequeño con GitHub Copilot o Claude Code, diff y validación |
+| **8–10** | Apply a DEV | Sincronizar **borrador**, repetir consulta urgente y FAQ |
+| **10–13** | **MCP oficial** | Desde VS Code: identidad/DEV, discovery del agente y capacidades disponibles |
+| **13–17** | **Evaluación** | Suite preparada de 3–5 casos, ejecutar/consultar resultados reales |
+| **17–19** | Quality gate | Interpretar fallos, seguridad y consumo si está disponible |
+| **19–20** | Cierre | El valor de Agent Engineering y repositorio |
 
-## 🖼️ Carrusel visual de la arquitectura
+**Clave:** no instalamos nada, no clonamos desde cero y no creamos un segundo agente en directo. Si existe una operación de evaluación por MCP y está validada, se utiliza; si no, **MCP y evaluación se demuestran por separado**. Ninguna publicación automática.
 
-Las cuatro láminas son archivos **SVG alojados en este repositorio**, visibles directamente desde GitHub y reutilizables en diapositivas. Se han diseñado como versiones vectoriales de la explicación técnica.
+[**Guion minuto a minuto**](docs/02-guion-directo.md) · [**Checklist de ensayo y plan B**](docs/00-checklist-20min.md) · [**Arquitectura Mermaid**](docs/03-arquitectura.md)
 
-| Arquitectura completa | Recorrido de la demo |
+## 🧪 Qué vamos a evaluar
+
+Tres preguntas visibles: **incidente crítico**, **FAQ normal** y **petición insegura de MFA**. La mini suite recomendada incluye cinco escenarios (`URG-01`, `FAQ-01`, `SEC-02`, `ADV-01`, `NEG-01`) de [18 casos sintéticos](tests/casos_v2.csv). El CSV sirve para preparar tests; **no** es necesariamente el formato de importación de Copilot Studio.
+
+La evaluación completa, el segundo harness, Foundry, Agent Framework, ALM y FinOps se mantienen como material avanzado para después de la charla.
+
+## 🖼️ Carrusel de apoyo
+
+Los cuatro diagramas siguientes corresponden a una **arquitectura extendida**, no a cuatro tareas que ejecutaremos en 20 minutos.
+
+| Arquitectura extendida | Recorrido extendido |
 |:---:|:---:|
 | [![Arquitectura](assets/carousel/01-arquitectura.svg)](assets/carousel/01-arquitectura.svg) | [![Recorrido](assets/carousel/02-recorrido-demo.svg)](assets/carousel/02-recorrido-demo.svg) |
-| **Quality Engineering** | **Ecosistema de herramientas** |
+| **Quality Engineering** | **Ecosistema** |
 | [![Quality Engineering](assets/carousel/03-quality-engineering.svg)](assets/carousel/03-quality-engineering.svg) | [![Ecosistema](assets/carousel/04-ecosistema.svg)](assets/carousel/04-ecosistema.svg) |
 
-> Estos SVG son diagramas vectoriales versionables; **no son los PNG originales generados para el carrusel**. Los PNG originales se conservan por separado y no se han cargado todavía en este repositorio.
+Son SVG versionables; los PNG del carrusel navideño no están alojados aquí.
 
-## Recorrido de la sesión (45 min)
+## 📁 Contenido
 
-| Minutos | Momento | Evidencia |
-|---|---|---|
-| 0–10 | Diseño low-code del agente ElfoDesk y problema reproducible | Conversación inicial |
-| 10–20 | Clonar a VS Code; SDD + IA + Git diff | Cambio revisado en YAML real |
-| 20–25 | Apply a DEV y revalidación | Antes y después |
-| 25–35 | Segundo agente, MCP oficial, skills y herramientas | Discovery read-only + demo disponible |
-| 35–40 | Seguridad, regresión y evaluaciones | Matriz de 18 escenarios |
-| 40–45 | Quality gate, ALM, observabilidad, coste | Decisión de release |
+- **[Guion 20 min](docs/02-guion-directo.md)** y **[checklist](docs/00-checklist-20min.md)**, con tiempos y contingencias.
+- [Contrato SDD](docs/05-sdd-contrato.md), [prompts para la IA](prompts/) y [documentación de arquitectura](docs/03-arquitectura.md).
+- [Preparación técnica MCP, VS Code y evaluación](docs/04-preparacion-tecnica.md).
+- [Pruebas](tests/) y [registro de evidencias](docs/07-evidencias-demo.md).
+- [Calidad, seguridad y FinOps](docs/06-alm-seguridad-costes.md), [novedades](docs/01-novedades-verificadas.md) y [ecosistema extendido](docs/08-ecosistema-extendido.md).
+- [Contenido ficticio del agente](samples/) y [configuración MCP opcional](.vscode/mcp.example.json).
 
-**Apply sincroniza el borrador del agente, pero NO publica.** La publicación es una acción separada.
-
-## Estructura
-
-- [Guion narrado](docs/02-guion-directo.md) y [arquitectura técnica](docs/03-arquitectura.md)
-- [Novedades y enlaces oficiales](docs/01-novedades-verificadas.md)
-- [Preparación técnica y MCP](docs/04-preparacion-tecnica.md)
-- [Contrato SDD y criterios de aceptación](docs/05-sdd-contrato.md)
-- [Seguridad, observabilidad y FinOps](docs/06-alm-seguridad-costes.md)
-- [Evidencias para ensayar](docs/07-evidencias-demo.md)
-- [Agent Framework y Foundry (extensión opcional)](docs/08-ecosistema-extendido.md)
-- [Prompts](prompts/) · [Ejemplos ficticios](samples/) · [Pruebas](tests/) · [API .NET 10 opcional](bonus-dotnet-api/)
-- [Carrusel visual SVG](assets/carousel/) (editable y versionable)
-
-## Arranque rápido (sin credenciales ni servicios cloud)
+## ✅ Validación local (no cloud)
 
 ```bash
 python3 tests/validar_matriz.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Este CI comprueba exclusivamente la **integridad del kit y la matriz de pruebas**, no el rendimiento de un agente desplegado. Para Copilot Studio necesitas un tenant DEV autorizado, crear los agentes y ejecutar las pruebas contra ellos.
-
-Para MCP en VS Code, usar el ejemplo **opt-in** `.vscode/mcp.example.json`; no se activa automáticamente.
-
-## Seguridad
-
-No hay datos de clientes ni secretos. No se deben enviar tokens, contraseñas, conversaciones reales ni ficheros exportados del tenant a un repositorio público. Revisa el código de IA antes de aplicar cambios y los permisos del MCP antes de invocar operaciones.
+Estos comandos **solo validan el kit**, no ejecutan ni evalúan conversaciones reales. **Apply ≠ Publish**. Todos los cambios cloud deben ejecutarse en DEV, con revisión de permisos, datos sintéticos y confirmación humana.
 
 ## Documentación oficial
 
-- [VS Code extension](https://learn.microsoft.com/en-us/microsoft-copilot-studio/visual-studio-code-extension-overview)
-- [Sincronización](https://learn.microsoft.com/en-us/microsoft-copilot-studio/visual-studio-code-extension-synchronization)
-- [Copilot Studio MCP](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/copilot-studio-mcp)
-- [Elección de harness](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/choose-harness)
-- [Agent evaluation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview)
+- [Extensión Copilot Studio para VS Code](https://learn.microsoft.com/en-us/microsoft-copilot-studio/visual-studio-code-extension-overview)
+- [Sincronización de cambios](https://learn.microsoft.com/en-us/microsoft-copilot-studio/visual-studio-code-extension-synchronization)
+- [Servidor MCP oficial](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/copilot-studio-mcp)
+- [Evaluación de agentes](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview)
+- [Diferencias entre harnesses](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/choose-harness)
 
-**Licencia:** pendiente de definir. Este repositorio no concede por defecto una licencia open source. Última revisión documental del kit: noviembre de 2026.
-
+**Licencia:** pendiente de decidir; el repositorio no concede automáticamente una licencia de código abierto.
