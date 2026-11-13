@@ -7,5 +7,5 @@
 ## Bonus .NET 10
 La carpeta `bonus-dotnet-api` define una **API local de triage determinista**. No bloquea cuentas ni hace llamadas a servicios. Para conectarla a Copilot Studio se requiere publicarla en HTTPS con autenticación, controles y conector autorizado. **El localhost no es accesible desde Copilot Studio cloud.**
 
-En la charla de 45 minutos, dejar el bonus como extensión para el repositorio; reservar el tiempo principal para YAML + MCP + Quality.
+En la charla de **20 minutos**, no ejecutar este bonus: reservar el directo para **YAML + IA + Git + Apply + MCP + evaluación**. Agent Framework, Foundry y la API .NET son material de profundización posterior.
 
