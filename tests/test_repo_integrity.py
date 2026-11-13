@@ -66,7 +66,7 @@ class DemoKitTests(unittest.TestCase):
             self.assertEqual(1, len(pngs))
             with pngs[0].open("rb") as fp:
                 header = fp.read(24)
-            self.assertEqual(b"\\x89PNG\\r\\n\\x1a\\n", header[:8])
+            self.assertEqual(bytes.fromhex("89504e470d0a1a0a"), header[:8])
             self.assertEqual((1200, 1500), struct.unpack(">II", header[16:24]))
 
     def test_reproduction_runbook_and_branding(self):
