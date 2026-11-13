@@ -10,6 +10,18 @@ Demo técnica: **Copilot Studio → VS Code → GitHub Copilot / Claude Code →
 
 En la primera ruta usamos un **agente de Copilot Studio con Standard harness** y su extensión oficial de VS Code para editar YAML. En la segunda, un **agente independiente con Microsoft Copilot harness** y el servidor MCP oficial para inspección, gestión y evaluación según los permisos disponibles. **No confundas los dos harnesses.**
 
+## 🖼️ Carrusel visual de la arquitectura
+
+Las cuatro láminas son archivos **SVG alojados en este repositorio**, visibles directamente desde GitHub y reutilizables en diapositivas. Se han diseñado como versiones vectoriales de la explicación técnica.
+
+| Arquitectura completa | Recorrido de la demo |
+|:---:|:---:|
+| [![Arquitectura](assets/carousel/01-arquitectura.svg)](assets/carousel/01-arquitectura.svg) | [![Recorrido](assets/carousel/02-recorrido-demo.svg)](assets/carousel/02-recorrido-demo.svg) |
+| **Quality Engineering** | **Ecosistema de herramientas** |
+| [![Quality Engineering](assets/carousel/03-quality-engineering.svg)](assets/carousel/03-quality-engineering.svg) | [![Ecosistema](assets/carousel/04-ecosistema.svg)](assets/carousel/04-ecosistema.svg) |
+
+> Estos SVG son diagramas vectoriales versionables; **no son los PNG originales generados para el carrusel**. Los PNG originales se conservan por separado y no se han cargado todavía en este repositorio.
+
 ## Recorrido de la sesión (45 min)
 
 | Minutos | Momento | Evidencia |
