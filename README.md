@@ -1,5 +1,32 @@
-# 🎄 Del low-code al pro-code: ElfoDesk Multi-Agent
-## Microsoft Copilot harness · GitHub Copilot + VS Code · MCP · Agent Evaluation
+# 🎄 ElfoDesk: del low-code al pro-code a golpe de villancico
+
+### Copilot Studio · VS Code · GitHub Copilot · MCP · Agent Evaluation
+
+¿Qué ocurre cuando un agente de Copilot Studio se escapa del diseñador visual y acaba en VS Code justo antes de Navidad? 🎅🏻💻
+
+Pues que empieza la verdadera magia.
+
+**ElfoDesk** es una demo práctica de *Agent Engineering* en la que combinamos **Microsoft Copilot Studio, GitHub Copilot, VS Code y MCP** para entender, evolucionar y evaluar un sistema multiagente sin tener que elegir entre low-code y pro-code.
+
+Aquí no venimos a enfrentar dos mundos.
+
+Venimos a ponerlos a trabajar juntos. ✨
+
+🎁 **Nuestro pequeño taller de elfos incluye:**
+
+- 🧝‍♀️ un orquestador que decide quién debe resolver cada petición
+- 🔐 un agente especializado en seguridad
+- 📚 un agente especializado en conocimiento
+- 🤖 IA ayudándonos desde VS Code
+- 🔎 trazas para comprobar qué ha ocurrido realmente
+- ✅ evaluación para descubrir si nuestros agentes se han portado bien… o merecen carbón
+
+> 💡 **La idea:** una buena respuesta no significa necesariamente una buena arquitectura.  
+> Queremos saber **qué agente actuó, por qué lo hizo y si podemos demostrarlo**.
+
+**Low-code cuando nos hace la vida más fácil. Pro-code cuando necesitamos más control. IA para ayudarnos durante el camino.**
+
+Y algún que otro villancico, porque estamos en Navidad. 🎄✨
 
 **Demo técnica de 20 minutos:** mostrar y evolucionar un sistema **multiagente** en Copilot Studio. Un orquestador delega consultas a **Security Agent** y **Knowledge Agent**, GitHub Copilot actúa desde VS Code mediante el **MCP oficial**, y una **evaluación de conversaciones con revisión de trazas** mide la calidad y la delegación real.
 
