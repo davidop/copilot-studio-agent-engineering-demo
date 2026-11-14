@@ -98,8 +98,8 @@ class DemoKitTests(unittest.TestCase):
 
         # Check the assets actually referenced in the current README, rather
         # than hard-coding previous image filenames that authors may replace.
-        markdown_images = re.findall(r"!\\[[^\\]]*\\]\\(([^)]+)\\)", readme)
-        html_images = re.findall(r'<img\\s+[^>]*src=["\\\']([^"\\\']+)["\\\']', readme)
+        markdown_images = re.findall(r'!\[[^\]]*\]\(([^)]+)\)', readme)
+        html_images = re.findall(r'<img[^>]+src="([^"]+)"', readme)
         local_images = [
             url.split("#", 1)[0].split("?", 1)[0]
             for url in markdown_images + html_images
