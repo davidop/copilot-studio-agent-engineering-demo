@@ -142,16 +142,18 @@ La demo no termina cuando acaba la charla. Hemos dejado todo lo necesario para a
 
 ## ✅ ¿Se han portado bien los agentes?
 
-> Antes de dar por terminado el trabajo del taller, podemos comprobar que los archivos, escenarios y pruebas locales están en orden:
->
+Antes de dar por terminado el trabajo del taller, podemos comprobar que los archivos, escenarios y pruebas locales están en orden:
+
 ```bash
 python3 multiagent/validate.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
->
-> 🎄 Importante: esta validación comprueba archivos y escenarios locales, pero no invoca Copilot Studio ni demuestra que los agentes estén funcionando correctamente en un tenant real.
->
-> Las pruebas reales deben ejecutarse sobre ElfoDesk Orchestrator configurado en DEV. La disponibilidad de Agent Evaluation puede depender del tenant y requerir créditos.
-> Y una regla del taller que no nos saltamos ni en Navidad: no presentamos objetivos o datos preparados como si fueran resultados reales. 😉
+```
+
+> 🎄 **Importante:** esta validación comprueba **archivos y escenarios locales**, pero no invoca Copilot Studio ni demuestra que los agentes estén funcionando correctamente en un tenant real.
+
+Las pruebas reales deben ejecutarse sobre **ElfoDesk Orchestrator** configurado en DEV. La disponibilidad de **Agent Evaluation** puede depender del tenant y requerir créditos.
+
+Y una regla del taller que no nos saltamos ni en Navidad: **no presentamos objetivos o datos preparados como si fueran resultados reales**. 😉
 
 ## 🧪 Antes de encender las luces del árbol...
 
@@ -163,13 +165,29 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 
 ## 🔐 Seguridad y límites
 
-Sin datos reales de clientes, tokens ni credenciales. Ningún ejemplo bloquea dispositivos, modifica cuentas, envía correos, abre tickets o publica agentes automáticamente. Toda mutación vía MCP necesita aprobación y comprobación del contrato real de herramientas.
+Sin datos reales de clientes, tokens ni credenciales.
 
-## Documentación oficial
+Ningún ejemplo bloquea dispositivos, modifica cuentas, envía correos, abre tickets o publica agentes automáticamente.
+
+Toda mutación vía MCP necesita aprobación y comprobación del contrato real de herramientas.
+
+## 📚 Documentación oficial
 
 - [Conectar agentes Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-agent-connected)
 - [MCP oficial de Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/copilot-studio-mcp)
 - [Crear evaluaciones](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-create)
 - [Elegir harness](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/choose-harness)
+
+---
+
+## 🎄 Un último detalle antes de cerrar el taller...
+
+Este repositorio forma parte de una demo técnica creada para explorar cómo **low-code, pro-code e IA** pueden trabajar juntos en el desarrollo de agentes.
+
+Si algo de aquí te sirve para experimentar, aprender o construir algo mejor, entonces el taller de ElfoDesk habrá cumplido su misión. ✨
+
+**Happy Agent Engineering & Merry Christmas!** 🎁🤖
+
+---
 
 **Licencia:** pendiente de definir; este repositorio no concede automáticamente licencia de código abierto.
