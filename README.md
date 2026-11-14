@@ -29,7 +29,7 @@ Venimos a ponerlos a trabajar juntos. ✨
 
 Y algún que otro villancico, porque estamos en Navidad. 🎄✨
 
-![ElfoDesk: arquitectura multiagente navideña](assets/carousel/originals/10-arquitectura-original.jpg)
+
 
 ## 🎁 ¿Qué vamos a desenvolver?
 
