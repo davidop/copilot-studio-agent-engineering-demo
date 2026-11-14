@@ -28,9 +28,6 @@ Venimos a ponerlos a trabajar juntos. ✨
 
 Y algún que otro villancico, porque estamos en Navidad. 🎄✨
 
-
-> **Estado:** repositorio de preparación, no un tenant desplegado. Los tres agentes y su conexión deben crearse previamente en Copilot Studio DEV. Los CSV contienen escenarios **sintéticos**, no resultados medidos. La edición YAML de la extensión clásica corresponde al **Standard harness** y queda como laboratorio legado, **no** forma parte de esta demo.
-
 ![ElfoDesk: arquitectura multiagente navideña](assets/carousel/originals/10-arquitectura-original.jpg)
 
 ## 🎯 Agenda definitiva — 20 minutos
@@ -109,6 +106,14 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
 La validación local comprueba **archivos y escenarios**, no invoca Copilot Studio. Las pruebas reales deben ejecutarse sobre el orquestador configurado en DEV; la pestaña Evaluate del nuevo harness puede requerir créditos y su disponibilidad depende del tenant. No presentar metas como resultados.
+
+## 🧪 Antes de encender las luces del árbol...
+
+> **Estado:** este repositorio contiene el material de preparación de la demo, no un tenant desplegado.
+>
+> Los tres agentes y su conexión deben crearse previamente en **Copilot Studio DEV**. Los CSV incluyen escenarios **sintéticos**, no resultados medidos.
+>
+> La edición YAML de la extensión clásica corresponde al **Standard harness** y se mantiene únicamente como laboratorio legado; **no forma parte de la demo principal**.
 
 ## 🔐 Seguridad y límites
 
