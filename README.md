@@ -56,17 +56,21 @@ El objetivo es **poder confiar en cómo ha llegado hasta esa respuesta**. ✨
 **¿Quieres reproducir la demo?**  
 [Runbook paso a paso](docs/09-runbook-paso-a-paso.md) · [Guion de la sesión](docs/10-guion-del-ponente.md) · [Checklist técnico](docs/00-checklist-20min.md)
 
-## 🧠 Tres componentes con responsabilidades claras
+## 🧝‍♀️ Conoce al equipo de ElfoDesk
 
-| Componente | Responsabilidad |
-|---|---|
-| **ElfoDesk Orchestrator** | Interpreta, decide delegación y consolida resultados |
-| **Security Agent** | Robo/pérdida, seguridad de cuentas, escalado **orientativo** |
-| **Knowledge Agent** | FAQ, horarios, procedimientos de recuperación y soporte |
+Detrás de ElfoDesk hay tres agentes con responsabilidades muy distintas. Para la demo les hemos dado un pequeño cambio de vestuario navideño, pero debajo del gorro siguen haciendo trabajo serio. 🎄
 
-Son agentes separados de **Microsoft Copilot harness** (nombre actual del antiguo *GitHub Copilot harness*). No confundas el runtime con **GitHub Copilot**, que usamos como asistente de programación.
+| Miembro del taller | Nombre técnico | Su misión |
+|---|---|---|
+| 🎅 **ElfoDesk Orchestrator** | ElfoDesk Orchestrator | Interpreta la petición, decide qué agente debe intervenir y consolida la respuesta |
+| 🛡️ **Rudolph Security** | Security Agent | Atiende pérdidas, robos, seguridad de cuentas y situaciones que requieren escalado orientativo |
+| 📚 **Noël Knowledge** | Knowledge Agent | Resuelve FAQ, horarios y procedimientos de recuperación y soporte |
 
-**Conectividad:** preparar los dos especialistas en el mismo entorno, publicarlos y habilitar su conexión; conectar después desde el agente principal. Confirmar permisos de todos los agentes para quienes participen en la demo.
+> 💡 Los nombres navideños forman parte del storytelling de la demo. Técnicamente seguimos trabajando con tres agentes independientes de **Microsoft Copilot harness**.
+
+No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de desarrollo desde VS Code.
+
+**Conectividad:** los dos agentes especialistas deben prepararse en el mismo entorno, publicarse y habilitarse como agentes conectables. Después se vinculan desde **ElfoDesk Orchestrator**, revisando también los permisos necesarios para quienes participen en la demo.
 
 ## ⚙️ Cómo reproducir la demo
 
