@@ -30,23 +30,31 @@ Y algún que otro villancico, porque estamos en Navidad. 🎄✨
 
 ![ElfoDesk: arquitectura multiagente navideña](assets/carousel/originals/10-arquitectura-original.jpg)
 
-## 🎯 Agenda definitiva — 20 minutos
+## 🎁 ¿Qué vamos a desenvolver?
 
-| Min | Demo visible | Evidencia |
-|---|---|---|
-| **0–2** | Reto de soporte IT: robo, cuenta y procedimiento | Pregunta multiintención |
-| **2–4** | ElfoDesk Orchestrator + 2 agentes conectados | Tres agentes publicados, mismo entorno |
-| **4–9** | **Delegación multiagente real** | Traza: Security, Knowledge y caso mixto |
-| **9–12** | **GitHub Copilot en VS Code + Copilot Studio MCP** | Discovery + propuesta de cambio con autorización |
-| **12–16** | **Agent Evaluation** | Suite preparada: puntuaciones y casos fallidos |
-| **16–19** | **Quality gate** | Revisión de trazas, seguridad y coste si disponible |
-| **19–20** | Mensaje final + GitHub | Recursos y siguientes pasos |
+Todo empieza con una petición aparentemente sencilla a nuestro pequeño servicio de soporte navideño.
 
-**Lo diferencial:** demostrar que se invocaron los agentes correctos. Una respuesta buena **no demuestra delegación**; necesitamos traza de actividad, además del score de evaluación.
+El problema es que detrás hay **varias intenciones, varios agentes y más de una decisión que tomar**.
 
-**Guía para reproducirla:** [**Runbook paso a paso — preparar, conectar, probar y evaluar**](docs/09-runbook-paso-a-paso.md) · [**Guion con lo que decir en cada minuto**](docs/10-guion-del-ponente.md)
+A partir de ahí veremos cómo:
 
-[Guion de 20 minutos](docs/02-guion-directo.md) · [Checklist técnico](docs/00-checklist-20min.md) · [Sistema multiagente completo](multiagent/README.md)
+- 🎄 **Copilot Studio** orquesta un pequeño equipo de agentes especializados
+- 💻 **VS Code + GitHub Copilot** nos ayudan a entender y evolucionar lo que estamos construyendo
+- 🔌 **MCP** conecta ambos mundos
+- 🧪 **Agent Evaluation + trazas** nos permiten comprobar si el sistema funciona de verdad y no solo si la respuesta “parece buena”
+
+### El viaje
+
+**Copilot Studio → VS Code + IA → mejora → evaluación → evidencia**
+
+Porque en Agent Engineering el objetivo no es simplemente que el agente responda.
+
+El objetivo es **poder confiar en cómo ha llegado hasta esa respuesta**. ✨
+
+> 🎯 **Lo diferencial:** una respuesta buena no demuestra por sí sola que la delegación sea correcta. Queremos comprobar qué agente actuó, qué decisión tomó el orquestador y qué evidencia tenemos para demostrarlo.
+
+**¿Quieres reproducir la demo?**  
+[Runbook paso a paso](docs/09-runbook-paso-a-paso.md) · [Guion de la sesión](docs/10-guion-del-ponente.md) · [Checklist técnico](docs/00-checklist-20min.md)
 
 ## 🧠 Tres componentes con responsabilidades claras
 
