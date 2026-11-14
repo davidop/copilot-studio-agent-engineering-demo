@@ -12,7 +12,9 @@
   <img src="https://img.shields.io/badge/Agent%20Evaluation-Quality%20Gate-E89AC7?style=for-the-badge" alt="Agent Evaluation" />
 </p>
 
-**Por David Oliva & Érika Cepeda** · Christmas Power Data Platform 2026 🎄
+<p align="center">
+  <strong>Por David Oliva & Érika Cepeda</strong> · Christmas Power Data Platform 2026 🎄
+</p>
 
 ¿Qué ocurre cuando un agente de Copilot Studio se escapa del diseñador visual y acaba en VS Code justo antes de Navidad? 🎅🏻💻
 
