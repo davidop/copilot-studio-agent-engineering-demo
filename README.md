@@ -108,15 +108,37 @@ Estas ilustraciones son **JPG optimizados de las imágenes generadas originalmen
 
 Mantenemos separadamente los [SVG versionados y sus PNG exportados automáticamente](assets/carousel/README.md) para documentación técnica, cambios futuros y slides de arquitectura. Las ilustraciones anteriores son la **versión visual preferente del README**.
 
-## 📂 Material reproducible
+## 🎁 ¿Qué hay dentro de la caja?
 
-- [Tres especificaciones de agentes](multiagent/agents/) · [Contrato de delegación](multiagent/delegation-contract.md)
-- [Preparación, permisos y MCP](docs/04-preparacion-tecnica.md)
-- [Prompts para el cliente MCP](multiagent/prompts/)
+La demo no termina cuando acaba la charla. Hemos dejado todo lo necesario para abrir ElfoDesk, entender cómo funciona y reproducir el experimento por tu cuenta.
+
+### 🧝 Los agentes
+
+- [Especificaciones de los tres agentes](multiagent/agents/)
+- [Contrato de delegación](multiagent/delegation-contract.md)
+
+### 🔌 La conexión entre mundos
+
+- [Preparación técnica, permisos y MCP](docs/04-preparacion-tecnica.md)
+- [Prompts para trabajar con el cliente MCP](multiagent/prompts/)
+
+### 🧪 Las pruebas
+
 - [Ocho escenarios multiagente](multiagent/evaluation/delegation-matrix.csv)
-- [CSV para preparar Agent Evaluation](multiagent/evaluation/copilot-harness-conversations.csv) · [Rúbrica](multiagent/evaluation/rubric.md)
-- [**Runbook de ejecución**](docs/09-runbook-paso-a-paso.md) · [Guion para el ponente](docs/10-guion-del-ponente.md) · [Evidencias](docs/07-evidencias-demo.md)
-- [Laboratorio legado Standard harness](legacy-standard/README.md), mantenido como referencia técnica
+- [Dataset para preparar Agent Evaluation](multiagent/evaluation/copilot-harness-conversations.csv)
+- [Rúbrica de evaluación](multiagent/evaluation/rubric.md)
+
+### 🎬 Para reproducir la demo
+
+- [Runbook paso a paso](docs/09-runbook-paso-a-paso.md)
+- [Guion para el ponente](docs/10-guion-del-ponente.md)
+- [Evidencias de la demo](docs/07-evidencias-demo.md)
+
+### 🧰 Y para quien quiera seguir investigando...
+
+- [Laboratorio legado Standard harness](legacy-standard/README.md)
+
+> ✨ **Nuestro objetivo:** que este repo no sea solo el recuerdo de una charla de 20 minutos, sino un punto de partida para seguir experimentando con Agent Engineering.
 
 ## ✅ Validación local
 
