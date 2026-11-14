@@ -52,6 +52,20 @@ Crear `ElfoDesk Orchestrator` con Microsoft Copilot harness.
 
 > **Advertencia:** conectar dos agentes no garantiza que ambos se ejecuten para cualquier petición. La combinación puede ser secuencial o el orquestador puede omitir uno; el resultado se valida, no se presupone.
 
+## 3A. Preparar conocimiento, skill y workflow para demostrar la arquitectura
+
+El kit [**ElfoDesk Demo Lab**](../multiagent/demo-lab/README.md) incluye dos fuentes de conocimiento aisladas, una skill de triaje, una herramienta de consulta de inventario simulada y seis casos de verificación.
+
+1. Abrir **Security Agent → Build → Knowledge** y subir únicamente [SEG-INC-2026](../multiagent/demo-lab/knowledge/seguridad-incidentes.md). Para esta demostración, no subir el documento general de soporte al mismo agente.
+2. En **Security Agent → Build → Skills**, cargar [security-triage/SKILL.md](../multiagent/demo-lab/skills/security-triage/SKILL.md). Verificar que el harness acepta el Markdown con nombre y descripción en YAML front matter. Una skill orienta procedimientos; **no** es una llamada de servicio.
+3. En **Knowledge Agent → Build → Knowledge**, subir únicamente [IT-NAV-2026](../multiagent/demo-lab/knowledge/soporte-navidad.md). Este documento contiene normas y catálogo, **sin cifras de stock**.
+4. Crear el workflow [consultar-stock-elfodesk](../multiagent/demo-lab/tools/README.md): **When an agent calls the flow → condiciones deterministas → Respond to the agent**. Parámetros `itemCode` y `location`. Mantener respuesta síncrona y publicar.
+5. Añadir este workflow **solo a Knowledge Agent**, comprobar nombre y descripción, y ensayar la consulta `LOAN-14` / `MAD` en Preview. La respuesta simulada del fixture son **2 unidades**; no afirmar que representan inventario real.
+6. Probar el orquestador con «Me han robado el portátil y necesito uno de préstamo LOAN-14 en MAD». Registrar **los agentes realmente invocados** y la **tool call**. La respuesta textual sola no demuestra ninguno de esos pasos.
+7. Comparar con la [matriz de evidencias del laboratorio](../multiagent/demo-lab/evaluation/proof-matrix.csv). Las columnas de resultados empiezan vacías y solo se completan después de ejecutar pruebas reales.
+
+**Si Knowledge proporciona una cifra sin invocar el workflow, el test TOOL-01/MIX-TOOL debe considerarse fallido.** El archivo [mock_stock.py](../multiagent/demo-lab/tools/mock_stock.py) ofrece una simulación offline del contrato; no despliega el workflow cloud ni sustituye su traza.
+
 ## 4. Configurar GitHub Copilot + MCP oficial en VS Code
 
 Antes del evento:
