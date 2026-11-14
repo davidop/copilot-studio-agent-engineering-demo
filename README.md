@@ -142,11 +142,16 @@ La demo no termina cuando acaba la charla. Hemos dejado todo lo necesario para a
 
 ## ✅ ¿Se han portado bien los agentes?
 
-Antes de dar por terminado el trabajo del taller, podemos comprobar que los archivos, escenarios y pruebas locales están en orden:
-
+> Antes de dar por terminado el trabajo del taller, podemos comprobar que los archivos, escenarios y pruebas locales están en orden:
+>
 ```bash
 python3 multiagent/validate.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
+>
+> 🎄 Importante: esta validación comprueba archivos y escenarios locales, pero no invoca Copilot Studio ni demuestra que los agentes estén funcionando correctamente en un tenant real.
+>
+> Las pruebas reales deben ejecutarse sobre ElfoDesk Orchestrator configurado en DEV. La disponibilidad de Agent Evaluation puede depender del tenant y requerir créditos.
+> Y una regla del taller que no nos saltamos ni en Navidad: no presentamos objetivos o datos preparados como si fueran resultados reales. 😉
 
 ## 🧪 Antes de encender las luces del árbol...
 
