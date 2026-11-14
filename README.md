@@ -1,3 +1,4 @@
+![ElfoDesk — Un taller navideño de Agent Engineering](assets/brand/elfodesk-hero.png)
 # 🎄 ElfoDesk: del low-code al pro-code a golpe de villancico
 
 ### Copilot Studio · VS Code · GitHub Copilot · MCP · Agent Evaluation
