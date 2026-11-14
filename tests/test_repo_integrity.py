@@ -1,6 +1,7 @@
 """Pruebas offline de integridad del repositorio; no se conectan a Copilot Studio."""
 import csv
 import json
+import re
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import unittest
@@ -91,12 +92,37 @@ class DemoKitTests(unittest.TestCase):
                      "assets/brand/README.md"]:
             with self.subTest(path=path):
                 self.assertTrue((ROOT / path).is_file())
+
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("docs/09-runbook-paso-a-paso.md", readme)
-        expected = ["10-arquitectura-original.jpg", "11-flujo-mcp-original.jpg",
-                    "12-evaluacion-original.jpg", "13-quality-gate-original.jpg"]
-        for name in expected:
-            self.assertIn(f"assets/carousel/originals/{name}", readme)
+
+        # Check the assets actually referenced in the current README, rather
+        # than hard-coding previous image filenames that authors may replace.
+        markdown_images = re.findall(r"!\\[[^\\]]*\\]\\(([^)]+)\\)", readme)
+        html_images = re.findall(r'<img\\s+[^>]*src=["\\\']([^"\\\']+)["\\\']', readme)
+        local_images = [
+            url.split("#", 1)[0].split("?", 1)[0]
+            for url in markdown_images + html_images
+            if not url.startswith(("http://", "https://", "data:", "/"))
+        ]
+        self.assertGreaterEqual(len(local_images), 5,
+                                "README should show the cover and four gallery illustrations")
+        self.assertTrue(any("assets/brand/" in url for url in local_images),
+                        "README should display current brand imagery")
+        for relpath in local_images:
+            with self.subTest(image=relpath):
+                image = ROOT / relpath
+                self.assertTrue(image.is_file(), f"Broken README image: {relpath}")
+                with image.open("rb") as f:
+                    magic = f.read(8)
+                if image.suffix.lower() == ".png":
+                    self.assertEqual(bytes.fromhex("89504e470d0a1a0a"), magic)
+                elif image.suffix.lower() in (".jpg", ".jpeg"):
+                    self.assertEqual(bytes.fromhex("ffd8ff"), magic[:3])
+                elif image.suffix.lower() == ".svg":
+                    ET.parse(image)
+                else:
+                    self.fail(f"Unsupported README image type: {relpath}")
 
     def test_mcp_example_valid(self):
         with (ROOT / ".vscode/mcp.example.json").open(encoding="utf-8") as f:
