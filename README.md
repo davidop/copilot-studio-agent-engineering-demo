@@ -102,6 +102,24 @@ No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de
 
 Para los pasos detallados, prompts, controles de seguridad y resolución de problemas, consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md).
 
+## 🔬 Una demostración que se puede comprobar
+
+Ya existe un **[laboratorio de conocimiento, skills y herramientas](multiagent/demo-lab/README.md)** para explicar y ensayar el recorrido técnico completo.
+
+| Componente | Responsable | Evidencia esperada |
+|---|---|---|
+| [Base SEG-INC-2026](multiagent/demo-lab/knowledge/seguridad-incidentes.md) | Rudolph Security | Respuesta fundamentada en la política de seguridad |
+| [Skill security-triage](multiagent/demo-lab/skills/security-triage/SKILL.md) | Rudolph Security | Procedimiento especializado de clasificación |
+| [Base IT-NAV-2026](multiagent/demo-lab/knowledge/soporte-navidad.md) | Noël Knowledge | Respuesta basada en horarios y catálogo |
+| [Workflow consultar-stock-elfodesk](multiagent/demo-lab/tools/README.md) | Noël Knowledge | Tool call con inventario **ficticio** |
+| [Prueba MIX-TOOL](multiagent/demo-lab/evaluation/proof-matrix.csv) | ElfoDesk Orchestrator | Dos especialistas, herramienta y trazas |
+
+**Pregunta principal:** «Me han robado el portátil y necesito uno de préstamo LOAN-14 para mañana. ¿Quedan unidades en MAD?»
+
+El objetivo es comprobar que ElfoDesk deriva seguridad al primer agente, conocimiento e inventario al segundo, y que este último **invoca realmente** el workflow. La respuesta del inventario es sintética; **no hay consultas a sistemas corporativos ni reservas reales**.
+
+Los archivos y pruebas en GitHub son una **preparación reproducible**, no prueba de que el tenant DEV tenga las bases, la skill y el workflow configurados. Para la prueba real hay que cargarlos y verificar las trazas desde Copilot Studio.
+
 ## ✨ La magia visual de ElfoDesk
 
 Porque una arquitectura multiagente también puede tener espíritu navideño.
