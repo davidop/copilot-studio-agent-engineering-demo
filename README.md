@@ -140,7 +140,9 @@ La demo no termina cuando acaba la charla. Hemos dejado todo lo necesario para a
 
 > ✨ **Nuestro objetivo:** que este repo no sea solo el recuerdo de una charla de 20 minutos, sino un punto de partida para seguir experimentando con Agent Engineering.
 
-## ✅ Validación local
+## ✅ ¿Se han portado bien los agentes?
+
+Antes de dar por terminado el trabajo del taller, podemos comprobar que los archivos, escenarios y pruebas locales están en orden:
 
 ```bash
 python3 multiagent/validate.py
