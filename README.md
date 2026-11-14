@@ -6,6 +6,8 @@
 
 ### Copilot Studio · VS Code · GitHub Copilot · MCP · Agent Evaluation
 
+**Por David Oliva & Érika Cepeda** · Christmas Power Data Platform 2026 🎄
+
 ¿Qué ocurre cuando un agente de Copilot Studio se escapa del diseñador visual y acaba en VS Code justo antes de Navidad? 🎅🏻💻
 
 Pues que empieza la verdadera magia.
