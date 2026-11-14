@@ -10,11 +10,11 @@ Mostrar la pregunta que requiere **seguridad y conocimiento**. Explicar objetivo
 En Copilot Studio, enseñar **ElfoDesk Orchestrator** y sus **Connected agents**: Security y Knowledge. Los especialistas ya tienen que estar creados, publicados y conectados; nada de configuración lenta en directo. Mostrar instrucciones breves y la división de responsabilidades.
 
 ## 04:00–09:00 · La delegación en acción
-Ejecutar tres preguntas ensayadas:
-1. Robo de portátil: esperamos Security Agent.
-2. Horario de soporte: esperamos Knowledge Agent.
-3. Robo + recuperación y horario: esperamos ambos especialistas.
-Mostrar en el panel de actividad/diagnóstico **qué agentes se invocaron**. Una respuesta correcta sin traza no acredita multiagente. Si un agente no se invoca, mostrar la diferencia como hallazgo técnico.
+Ejecutar tres preguntas **preparadas con el demo-lab**:
+1. «Me han robado el portátil»: esperamos **Security Agent**, con conocimiento SEG-INC-2026 y guía de triaje.
+2. «¿Quedan portátiles LOAN-14 en MAD?»: esperamos **Knowledge Agent**, conocimiento IT-NAV-2026 y una **llamada real** a consultar-stock-elfodesk (dato simulado).
+3. «Me han robado el portátil y necesito otro LOAN-14»: esperamos **ambos especialistas** y una invocación de la herramienta desde Knowledge Agent.
+Mostrar en el panel de actividad/diagnóstico **qué agentes y herramientas se invocaron realmente**. El mock Python de GitHub no es una llamada a Copilot Studio. Una respuesta correcta sin traza no acredita multiagente. Si un agente no se invoca, mostrar la diferencia como hallazgo técnico.
 
 ## 09:00–12:00 · GitHub Copilot + VS Code + MCP
 Con MCP ya autenticado en DEV, preguntar a GitHub Copilot: «inspecciona ElfoDesk y sus especialistas, enumera operaciones disponibles, no modifiques ni publiques».
