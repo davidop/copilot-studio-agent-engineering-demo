@@ -4,7 +4,13 @@
 
 # 🎄 ElfoDesk: del low-code al pro-code a golpe de villancico
 
-### Copilot Studio · VS Code · GitHub Copilot · MCP · Agent Evaluation
+<p align="center">
+  <img src="https://img.shields.io/badge/Copilot%20Studio-Agent%20Engineering-7B61FF?style=for-the-badge" alt="Copilot Studio" />
+  <img src="https://img.shields.io/badge/VS%20Code-Pro--code-5C2D91?style=for-the-badge" alt="VS Code" />
+  <img src="https://img.shields.io/badge/GitHub%20Copilot-AI%20Pairing-8A63D2?style=for-the-badge" alt="GitHub Copilot" />
+  <img src="https://img.shields.io/badge/MCP-Connected-6CCFC0?style=for-the-badge" alt="MCP" />
+  <img src="https://img.shields.io/badge/Agent%20Evaluation-Quality%20Gate-E89AC7?style=for-the-badge" alt="Agent Evaluation" />
+</p>
 
 **Por David Oliva & Érika Cepeda** · Christmas Power Data Platform 2026 🎄
 
