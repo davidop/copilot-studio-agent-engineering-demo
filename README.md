@@ -147,9 +147,6 @@ Antes de dar por terminado el trabajo del taller, podemos comprobar que los arch
 ```bash
 python3 multiagent/validate.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
-```
-
-La validación local comprueba **archivos y escenarios**, no invoca Copilot Studio. Las pruebas reales deben ejecutarse sobre el orquestador configurado en DEV; la pestaña Evaluate del nuevo harness puede requerir créditos y su disponibilidad depende del tenant. No presentar metas como resultados.
 
 ## 🧪 Antes de encender las luces del árbol...
 
