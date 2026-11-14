@@ -112,7 +112,7 @@ La idea es que cada imagen ayude a entender el recorrido de forma rápida, sin c
 
 | 1. Arquitectura multiagente | 2. Flujo de desarrollo y MCP |
 |:---:|:---:|
-| [![ElfoDesk Orchestrator, Security y Knowledge](assets/carousel/originals/10-arquitectura-original.jpg)](assets/carousel/originals/10-arquitectura-original.jpg) | [![GitHub Copilot, MCP, pruebas y evaluación](assets/carousel/originals/11-flujo-mcp-original.jpg)](assets/carousel/originals/11-flujo-mcp-original.jpg) |
+| [![ElfoDesk: arquitectura multiagente con ElfoDesk Orchestrator, Rudolph Security y Noël Knowledge](assets/brand/elfodesk-architecture.png)](assets/brand/elfodesk-architecture.png) | [![GitHub Copilot, MCP, pruebas y evaluación](assets/carousel/originals/11-flujo-mcp-original.jpg)](assets/carousel/originals/11-flujo-mcp-original.jpg) |
 | **3. Agent Evaluation** | **4. Quality Gate** |
 | [![Escenarios de evaluación y delegación](assets/carousel/originals/12-evaluacion-original.jpg)](assets/carousel/originals/12-evaluacion-original.jpg) | [![Criterios de aprobación y trazabilidad](assets/carousel/originals/13-quality-gate-original.jpg)](assets/carousel/originals/13-quality-gate-original.jpg) |
 
