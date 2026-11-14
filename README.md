@@ -88,9 +88,13 @@ No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de
 
 Para los pasos detallados, prompts, controles de seguridad y resolución de problemas, consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md).
 
-## 🖼️ Carrusel original · Microsoft + Navidad
+## ✨ La magia visual de ElfoDesk
 
-La galería principal recupera los **cuatro diseños ilustrados originales** elegidos para la sesión: fondos claros, colores Microsoft, motivos navideños y jerarquía visual pensada para presentar en 20 minutos.
+Porque una arquitectura multiagente también puede tener espíritu navideño.
+
+Esta galería reúne las cuatro piezas visuales principales de la demo: arquitectura, flujo de desarrollo, evaluación y quality gate.
+
+La idea es que cada imagen ayude a entender el recorrido de forma rápida, sin convertir la sesión en un desfile de cajas y flechas imposibles. 🎄
 
 | 1. Arquitectura multiagente | 2. Flujo de desarrollo y MCP |
 |:---:|:---:|
