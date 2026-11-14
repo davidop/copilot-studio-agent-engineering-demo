@@ -72,17 +72,21 @@ No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de
 
 **Conectividad:** los dos agentes especialistas deben prepararse en el mismo entorno, publicarse y habilitarse como agentes conectables. Después se vinculan desde **ElfoDesk Orchestrator**, revisando también los permisos necesarios para quienes participen en la demo.
 
-## ⚙️ Cómo reproducir la demo
+## 🛠️ Monta tu propio taller de ElfoDesk
 
-1. **Preparar DEV** con Microsoft Copilot harness y permisos de publicación/connected agents.
-2. Crear y publicar **Security Agent** y **Knowledge Agent** con las [especificaciones ficticias](multiagent/agents/); configurarlos como conectables.
-3. Crear **ElfoDesk Orchestrator**, vincular ambos especialistas en **Build → Connected agents** y revisar permisos.
-4. Ensayar tres consultas y comprobar **delegación observable** desde Preview (seguridad, FAQ y consulta mixta).
-5. Conectar **GitHub Copilot en VS Code** al servidor **Copilot Studio MCP** y confirmar DEV / herramientas disponibles antes de modificar nada.
-6. Preparar **Evaluate** con cinco casos, ejecutar un ensayo y registrar resultados **reales** y trazas por separado.
-7. Ejecutar el guion de 20 minutos con pantallas y evaluación ya abiertas; usar un vídeo del ensayo claramente identificado como respaldo.
+¿Quieres reproducir la demo? Aquí tienes el recorrido básico para dejarlo todo preparado antes de que empiece a sonar el primer villancico. 🎶
 
-Consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md) para los pasos exactos, prompts, controles de seguridad y resolución de problemas.
+1. **Prepara tu entorno DEV** con Microsoft Copilot harness y permisos de publicación y agentes conectados.
+2. Crea y publica **Security Agent** y **Knowledge Agent** utilizando las [especificaciones ficticias](multiagent/agents/) y configúralos como conectables.
+3. Crea **ElfoDesk Orchestrator**, vincula ambos especialistas desde **Build → Connected agents** y revisa los permisos.
+4. Prueba consultas de seguridad, conocimiento y casos mixtos para comprobar que la **delegación es observable** desde Preview.
+5. Conecta **GitHub Copilot en VS Code** al servidor **Copilot Studio MCP** y confirma el entorno y las herramientas disponibles antes de modificar nada.
+6. Prepara **Agent Evaluation**, ejecuta los casos de prueba y registra por separado los resultados y las trazas.
+7. Deja listas las pantallas, evidencias y plan B para ejecutar la demo sin depender de la magia navideña de última hora. 🎄
+
+> 🧝‍♂️ **Consejo de taller:** no improvises una mutación vía MCP durante la demo sin haber validado antes permisos, herramientas y entorno.
+
+Para los pasos detallados, prompts, controles de seguridad y resolución de problemas, consulta el [runbook operativo completo](docs/09-runbook-paso-a-paso.md).
 
 ## 🖼️ Carrusel original · Microsoft + Navidad
 
