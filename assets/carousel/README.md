@@ -26,5 +26,4 @@ Las cuatro imágenes finales del carrusel, generadas para la sesión y publicada
 | [elfodesk-agent-evaluation.png](originals/elfodesk-agent-evaluation.png) | Casos de prueba para validar delegación, seguridad y calidad |
 | [elfodesk-quality-gate.png](originals/elfodesk-quality-gate.png) | Validación final de respuesta, delegación, seguridad, consumo y trazabilidad |
 
-**Uso recomendado:** JPG originales para portadas, carruseles y sesiones; SVG + PNG derivados para diagramas técnicos versionables. Las imágenes son *infografías conceptuales*; no representan pruebas ejecutadas ni métricas de un sistema real.
-
+**Uso recomendado:** ilustraciones PNG de `originals/` para README, portadas, carruseles y sesiones; SVG + PNG derivados para diagramas técnicos versionables. Las imágenes son *infografías conceptuales*; no representan pruebas ejecutadas ni métricas de un sistema real.
