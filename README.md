@@ -67,8 +67,6 @@ El objetivo es **poder confiar en cómo ha llegado hasta esa respuesta**. ✨
 
 > 🎯 **Lo diferencial:** una respuesta buena no demuestra por sí sola que la delegación sea correcta. Queremos comprobar qué agente actuó, qué decisión tomó el orquestador y qué evidencia tenemos para demostrarlo.
 
-**¿Quieres reproducir la demo?**  
-[Runbook paso a paso](docs/09-runbook-paso-a-paso.md) · [Guion de la sesión](docs/10-guion-del-ponente.md) · [Checklist técnico](docs/00-checklist-20min.md)
 
 ## 🧝‍♀️ Conoce al equipo de ElfoDesk
 
