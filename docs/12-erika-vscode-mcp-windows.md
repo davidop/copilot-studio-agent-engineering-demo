@@ -1,6 +1,6 @@
-# Érika — configuración completa de Windows, VS Code, GitHub Copilot y Copilot Studio MCP
+# Érika — configuración de Windows/macOS, VS Code, GitHub Copilot y Copilot Studio MCP
 
-**Objetivo:** preparar el ordenador de Érika para desarrollar y demostrar **ElfoDesk Multi-Agent** desde **VS Code + GitHub Copilot**, con el **MCP oficial de Copilot Studio** apuntando exclusivamente a su entorno **DEV**. Este procedimiento se realiza **antes** de la sesión de 20 minutos.
+**Objetivo:** preparar el ordenador de Érika (Windows o Mac) para desarrollar y demostrar **ElfoDesk Multi-Agent** desde **VS Code + GitHub Copilot**, con el **MCP oficial de Copilot Studio** apuntando exclusivamente a su entorno **DEV**. Este procedimiento se realiza **antes** de la sesión de 20 minutos.
 
 > **No se ha realizado ninguna instalación ni autenticación en el equipo de Érika.** Cada comprobación marcada como «esperado» deberá verificarse allí. El acceso a un tenant y las herramientas disponibles dependen de identidad, licencia, políticas, consentimiento y entorno.
 
@@ -60,6 +60,39 @@ git pull --ff-only
 Abrir **Explorer** y verificar que aparecen `README.md`, `multiagent/agents/`, `multiagent/demo-lab/`, `docs/` y `.vscode/mcp.example.json`.
 
 Recomendación: utilizar una rama propia para ensayos/documentación; **no** modificar material de demostración en `main` sin revisión.
+
+### Alternativa macOS (sustituye las secciones 1 y 2)
+
+En un Mac actualizado, abrir **Terminal**. Instalar Homebrew desde [brew.sh](https://brew.sh/) si aún no está disponible. Después instalar VS Code y Git:
+
+```bash
+brew install --cask visual-studio-code
+brew install git
+```
+
+Instalar **Node.js LTS** desde [nodejs.org](https://nodejs.org/) (o con Homebrew si la versión ofrecida está marcada como LTS). Cerrar y volver a abrir Terminal y comprobar:
+
+```bash
+code --version
+git --version
+node --version
+npm --version
+npx --version
+```
+
+Si `code` no se reconoce, en VS Code abrir la paleta con `Cmd+Shift+P`, ejecutar **Shell Command: Install 'code' command in PATH** y abrir una Terminal nueva.
+
+Clonar el repositorio y abrirlo:
+
+```bash
+mkdir -p "$HOME/source/repos"
+cd "$HOME/source/repos"
+git clone https://github.com/davidop/copilot-studio-agent-engineering-demo.git
+cd copilot-studio-agent-engineering-demo
+code .
+```
+
+Si ya existe el repositorio, entrar en su carpeta y ejecutar `git pull --ff-only`. En los pasos siguientes, usar `Cmd+Shift+X` en lugar de `Ctrl+Shift+X` y `Cmd+Shift+P` en lugar de `Ctrl+Shift+P`; el resto de la configuración de Copilot, MCP y Microsoft Entra es común a ambos sistemas.
 
 ## 3. Activar GitHub Copilot en VS Code
 
