@@ -124,9 +124,9 @@ Los archivos y pruebas en GitHub son una **preparación reproducible**, no prueb
 
 Porque una arquitectura multiagente también puede tener espíritu navideño.
 
-Esta galería reúne las cuatro piezas visuales principales de la demo: arquitectura, flujo de desarrollo, evaluación y quality gate.
+Esta galería reúne las cuatro piezas visuales principales de la demo: **arquitectura, flujo de desarrollo, evaluación y Quality Gate**.
 
-La idea es que cada imagen ayude a entender el recorrido de forma rápida, sin convertir la sesión en un desfile de cajas y flechas imposibles. 🎄
+Las cuatro forman parte de la misma familia visual de **ElfoDesk** y cuentan, de principio a fin, cómo pasa un agente de la idea a una solución evaluada y lista para decidir si continúa… o vuelve al taller. 🎄✨
 
 | 1. Arquitectura multiagente | 2. Flujo de desarrollo y MCP |
 |:---:|:---:|
