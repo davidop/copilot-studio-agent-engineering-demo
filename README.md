@@ -66,6 +66,8 @@ El objetivo es **poder confiar en cómo ha llegado hasta esa respuesta**. ✨
 > 🎯 **Lo diferencial:** una respuesta buena no demuestra por sí sola que la delegación sea correcta. Queremos comprobar qué agente actuó, qué decisión tomó el orquestador y qué evidencia tenemos para demostrarlo.
 
 
+**Para montar la demo en un tenant independiente:** [Guía técnica de Érika — instalación, agentes, Knowledge, Skills, workflow, MCP, Evaluate y guion de 20 minutos](docs/11-demo-erika-tenant.md).
+
 ## 🧝‍♀️ Conoce al equipo de ElfoDesk
 
 Detrás de ElfoDesk hay tres agentes con responsabilidades muy distintas. Para la demo les hemos dado un pequeño cambio de vestuario navideño, pero debajo del gorro siguen haciendo trabajo serio. 🎄
