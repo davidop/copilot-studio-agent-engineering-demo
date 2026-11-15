@@ -134,7 +134,9 @@ Las cuatro forman parte de la misma familia visual de **ElfoDesk** y cuentan, de
 | **3. Agent Evaluation** | **4. Quality Gate** |
 | [![ElfoDesk: Agent Evaluation con casos de prueba, delegación, seguridad y Quality Gate](assets/carousel/originals/elfodesk-agent-evaluation.png)](assets/carousel/originals/elfodesk-agent-evaluation.png) | [![ElfoDesk: Quality Gate con respuesta correcta, delegación observada, seguridad, consumo y trazabilidad](assets/carousel/originals/elfodesk-quality-gate.png)](assets/carousel/originals/elfodesk-quality-gate.png) |
 
-Estas ilustraciones son **JPG optimizados de las imágenes generadas originalmente**, sin sustituir su composición por diagramas genéricos. Representan **arquitecturas y objetivos**, no ejecuciones verificadas en un tenant ni scores reales. Los símbolos y denominaciones de producto son recursos visuales; la demo no está patrocinada por Microsoft.
+Estas ilustraciones son **PNG generados específicamente para la sesión** y forman parte de la identidad visual de ElfoDesk. Representan **arquitecturas y objetivos**, no ejecuciones verificadas en un tenant ni scores reales.
+
+Los símbolos y denominaciones de producto se utilizan como recursos visuales para explicar la demo; este proyecto no implica patrocinio ni colaboración oficial por parte de Microsoft.
 
 ### Diagramas técnicos editables
 
