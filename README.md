@@ -86,7 +86,7 @@ No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de
 
 ¿Quieres reproducir la demo? Aquí tienes el recorrido básico para dejarlo todo preparado antes de que empiece a sonar el primer villancico. 🎶
 
-1. **Prepara tu entorno DEV** con Microsoft Copilot harness y permisos de publicación y agentes conectados.
+1. **Prepara tu entorno DEV** con el **GitHub Copilot harness de Microsoft Copilot Studio** y los permisos necesarios para publicar y conectar agentes.
 2. Crea y publica **Security Agent** y **Knowledge Agent** utilizando las [especificaciones ficticias](multiagent/agents/) y configúralos como conectables.
 3. Crea **ElfoDesk Orchestrator**, vincula ambos especialistas desde **Build → Connected agents** y revisa los permisos.
 4. Prueba consultas de seguridad, conocimiento y casos mixtos para comprobar que la **delegación es observable** desde Preview.
