@@ -84,6 +84,12 @@ El **GitHub Copilot harness de Microsoft Copilot Studio** es el runtime sobre el
 
 **Conectividad:** publica **Rudolph Security** y **Noël Knowledge** como agentes conectables en el mismo entorno y vincúlalos después desde **ElfoDesk Orchestrator**, revisando los permisos necesarios para la demo.
 
+## 💻 Preparación del entorno de Érika
+
+[**Montaje completo de VS Code + GitHub Copilot + MCP en Windows (Érika)**](docs/12-erika-vscode-mcp-windows.md) — instalación, clonación del repositorio, extensiones, configuración del servidor oficial `@microsoft/copilot-studio-mcp`, login de GitHub y Microsoft, selección de DEV, pruebas de conexión y solución de problemas.
+
+**Archivos de referencia:** [`.mcp.example.json`](.mcp.example.json) (Copilot harness) y [`.vscode/mcp.example.json`](.vscode/mcp.example.json) (configuración del editor). Son formatos distintos: seguir la guía y confirmar la conexión en el modo seleccionado.
+
 ## 🛠️ Monta tu propio taller de ElfoDesk
 
 ¿Quieres reproducir la demo? Aquí tienes el recorrido básico para dejarlo todo preparado antes de que empiece a sonar el primer villancico. 🎶
