@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "copilotStudio": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@microsoft/copilot-studio-mcp@latest"
+      ]
+    }
+  }
+}
