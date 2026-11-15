@@ -93,19 +93,11 @@ Comprobar licencia/entitlement, créditos, permisos de creación/publicación, p
 
 ## 5. Preparar GitHub Copilot + Copilot Studio MCP en VS Code
 
-**Solo para operación de desarrollo; no es el protocolo de comunicación entre los connected agents.**
+**Guía de instalación desde cero:** [Windows + VS Code + GitHub Copilot + Copilot Studio MCP](12-erika-vscode-mcp-windows.md). **Esta guía es obligatoria para preparar el equipo** e incluye WinGet, versiones, clonación de GitHub, login, Copilot harness, servidor MCP, configuración Global frente a la de workspace, autenticación Microsoft, verificación de DEV, pruebas read-only y troubleshooting.
 
-1. Instalar VS Code con GitHub Copilot Chat, Node.js y `npx`, siempre que la política del tenant permita usar el paquete Microsoft.
-2. Abrir el repositorio, copiar [mcp.example.json](../.vscode/mcp.example.json) a `.vscode/mcp.json` si se usa configuración de workspace, sin sobreescribir otras entradas.
-3. Iniciar el servidor `npx -y @microsoft/copilot-studio-mcp@latest`. Autenticar con la cuenta laboral de Érika y **elegir DEV**; comprobar nombres reales de entorno y agentes.
-4. En Copilot Chat, introducir:
+> **Importante:** el nuevo Copilot harness dispone de su configuración nativa de MCP (`mcpServers`). `.vscode/mcp.json` (`servers`) puede corresponder al cliente MCP del editor y no equivale necesariamente al servidor habilitado en la sesión Copilot. Seguir el procedimiento de la guía nueva y verificar una llamada MCP real antes del evento.
 
-> Utiliza únicamente el MCP oficial de Copilot Studio. Comprueba mi identidad y entorno DEV; busca ElfoDesk Orchestrator, Security Agent y Knowledge Agent, y enumera sus capacidades disponibles. Describe las operaciones de lectura y evaluación que soporta realmente esta conexión. No crees, edites, publiques ni ejecutes evaluaciones sin autorización.
 
-5. Mostrar resultado real de discovery. Si se quiere proponer un cambio en el enrutamiento, pedir análisis y diff de instrucciones; aplicar solo si la operación está disponible, probada y aprobada.
-6. Guardar captura del servidor conectado y de los agentes descubiertos.
-
-[Documentación oficial: VS Code + Copilot Studio MCP](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/copilot-studio-mcp-vscode-copilot-cli)
 
 ## 6. Preparar Agent Evaluation
 
