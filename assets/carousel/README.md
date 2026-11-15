@@ -17,7 +17,7 @@ Los diagramas 00–04 corresponden al diseño anterior Standard / arquitectura e
 
 ## Ilustraciones navideñas originales (preferidas para comunicar la sesión)
 
-Las cuatro imágenes finales del carrusel, generadas para la sesión y optimizadas en JPEG, están publicadas en la carpeta [originals](originals/). **Son los diseños claros con motivos navideños que aparecen en el README principal**, no exportaciones de SVG.
+Las cuatro imágenes finales del carrusel, generadas para la sesión y publicadas en formato PNG, están disponibles en la carpeta [originals](originals/). **Son las ilustraciones navideñas destacadas en el README principal**, no exportaciones de SVG.
 
 | Archivo | Contenido |
 |---|---|
