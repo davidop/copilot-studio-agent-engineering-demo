@@ -132,7 +132,7 @@ La idea es que cada imagen ayude a entender el recorrido de forma rápida, sin c
 |:---:|:---:|
 | [![ElfoDesk: arquitectura multiagente con ElfoDesk Orchestrator, Rudolph Security y Noël Knowledge](assets/carousel/originals/elfodesk-architecture.png)](assets/carousel/originals/elfodesk-architecture.png) | [![ElfoDesk: flujo de desarrollo con GitHub Copilot, MCP, pruebas, evaluación y Quality Gate](assets/carousel/originals/elfodesk-demo-flow.png)](assets/carousel/originals/elfodesk-demo-flow.png) |
 | **3. Agent Evaluation** | **4. Quality Gate** |
-| [![ElfoDesk: Agent Evaluation con casos de prueba, delegación, seguridad y Quality Gate](assets/carousel/originals/elfodesk-agent-evaluation.png)](assets/carousel/originals/elfodesk-agent-evaluation.png) | [![Criterios de aprobación y trazabilidad](assets/carousel/originals/13-quality-gate-original.jpg)](assets/carousel/originals/13-quality-gate-original.jpg) |
+| [![ElfoDesk: Agent Evaluation con casos de prueba, delegación, seguridad y Quality Gate](assets/carousel/originals/elfodesk-agent-evaluation.png)](assets/carousel/originals/elfodesk-agent-evaluation.png) | [![ElfoDesk: Quality Gate con respuesta correcta, delegación observada, seguridad, consumo y trazabilidad](assets/carousel/originals/elfodesk-quality-gate.png)](assets/carousel/originals/elfodesk-quality-gate.png) |
 
 Estas ilustraciones son **JPG optimizados de las imágenes generadas originalmente**, sin sustituir su composición por diagramas genéricos. Representan **arquitecturas y objetivos**, no ejecuciones verificadas en un tenant ni scores reales. Los símbolos y denominaciones de producto son recursos visuales; la demo no está patrocinada por Microsoft.
 
