@@ -76,7 +76,7 @@ Detrás de ElfoDesk hay tres agentes con responsabilidades muy distintas. Para l
 | 🛡️ **Rudolph Security** | Security Agent | Atiende pérdidas, robos, seguridad de cuentas y situaciones que requieren escalado orientativo |
 | 📚 **Noël Knowledge** | Knowledge Agent | Resuelve FAQ, horarios y procedimientos de recuperación y soporte |
 
-> > 💡 Los nombres navideños forman parte del storytelling de la demo. Técnicamente seguimos trabajando con tres agentes independientes sobre el **GitHub Copilot harness de Microsoft Copilot Studio**.
+> 💡 Los nombres navideños forman parte del storytelling de la demo. Técnicamente seguimos trabajando con tres agentes independientes sobre el **GitHub Copilot harness de Microsoft Copilot Studio**.
 
 No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de desarrollo desde VS Code.
 
