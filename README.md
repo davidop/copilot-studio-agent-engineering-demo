@@ -42,8 +42,6 @@ Venimos a ponerlos a trabajar juntos. ✨
 
 Y algún que otro villancico, porque estamos en Navidad. 🎄✨
 
-
-
 ## 🎁 ¿Qué vamos a desenvolver?
 
 Todo empieza con una petición aparentemente sencilla a nuestro pequeño servicio de soporte navideño.
