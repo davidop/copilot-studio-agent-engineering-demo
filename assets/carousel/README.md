@@ -21,10 +21,10 @@ Las cuatro imágenes finales del carrusel, generadas para la sesión y optimizad
 
 | Archivo | Contenido |
 |---|---|
-| [10-arquitectura-original.jpg](originals/10-arquitectura-original.jpg) | ElfoDesk Orchestrator, Security Agent y Knowledge Agent |
-| [11-flujo-mcp-original.jpg](originals/11-flujo-mcp-original.jpg) | Definir, desarrollar, gestionar vía MCP, probar y evaluar |
-| [12-evaluacion-original.jpg](originals/12-evaluacion-original.jpg) | Casos de delegación, seguridad y calidad |
-| [13-quality-gate-original.jpg](originals/13-quality-gate-original.jpg) | Respuesta, trazas, seguridad y consumo |
+| [elfodesk-architecture.png](originals/elfodesk-architecture.png) | Arquitectura multiagente con ElfoDesk Orchestrator, Rudolph Security y Noël Knowledge |
+| [elfodesk-demo-flow.png](originals/elfodesk-demo-flow.png) | Flujo técnico de la demo: definir, desarrollar con IA, gestionar con MCP, probar, evaluar y aplicar Quality Gate |
+| [elfodesk-agent-evaluation.png](originals/elfodesk-agent-evaluation.png) | Casos de prueba para validar delegación, seguridad y calidad |
+| [elfodesk-quality-gate.png](originals/elfodesk-quality-gate.png) | Validación final de respuesta, delegación, seguridad, consumo y trazabilidad |
 
 **Uso recomendado:** JPG originales para portadas, carruseles y sesiones; SVG + PNG derivados para diagramas técnicos versionables. Las imágenes son *infografías conceptuales*; no representan pruebas ejecutadas ni métricas de un sistema real.
 
