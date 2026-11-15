@@ -90,7 +90,7 @@ No confundas el runtime con **GitHub Copilot**, que utilizamos como asistente de
 2. Crea y publica **Security Agent** y **Knowledge Agent** utilizando las [especificaciones ficticias](multiagent/agents/) y configúralos como conectables.
 3. Crea **ElfoDesk Orchestrator**, vincula ambos especialistas desde **Build → Connected agents** y revisa los permisos.
 4. Prueba consultas de seguridad, conocimiento y casos mixtos para comprobar que la **delegación es observable** desde Preview.
-5. Conecta **GitHub Copilot en VS Code** al servidor **Copilot Studio MCP** y confirma el entorno y las herramientas disponibles antes de modificar nada.
+5. 5. Conecta **GitHub Copilot en VS Code** al **servidor MCP de Copilot Studio** y confirma el entorno y las herramientas disponibles antes de modificar nada.
 6. Prepara **Agent Evaluation**, ejecuta los casos de prueba y registra por separado los resultados y las trazas.
 7. Deja listas las pantallas, evidencias y plan B para ejecutar la demo sin depender de la magia navideña de última hora. 🎄
 
