@@ -80,7 +80,7 @@ Detrás de ElfoDesk hay tres agentes con responsabilidades muy distintas. Para l
 
 El **GitHub Copilot harness de Microsoft Copilot Studio** es el runtime sobre el que trabajan los agentes; **GitHub Copilot**, en cambio, nos acompaña desde VS Code como asistente de desarrollo.
 
-**Conectividad:** los dos agentes especialistas deben prepararse en el mismo entorno, publicarse y habilitarse como agentes conectables. Después se vinculan desde **ElfoDesk Orchestrator**, revisando también los permisos necesarios para quienes participen en la demo.
+**Conectividad:** publica **Rudolph Security** y **Noël Knowledge** como agentes conectables en el mismo entorno y vincúlalos después desde **ElfoDesk Orchestrator**, revisando los permisos necesarios para la demo.
 
 ## 🛠️ Monta tu propio taller de ElfoDesk
 
