@@ -138,9 +138,16 @@ Estas ilustraciones son **PNG generados específicamente para la sesión** y for
 
 Los símbolos y denominaciones de producto se utilizan como recursos visuales para explicar la demo; este proyecto no implica patrocinio ni colaboración oficial por parte de Microsoft.
 
-### Diagramas técnicos editables
+### 🧩 Dos capas visuales, dos propósitos
 
-Mantenemos separadamente los [SVG versionados y sus PNG exportados automáticamente](assets/carousel/README.md) para documentación técnica, cambios futuros y slides de arquitectura. Las ilustraciones anteriores son la **versión visual preferente del README**.
+Las ilustraciones de ElfoDesk que ves arriba están pensadas para **comunicar la historia de la demo de forma rápida y visual**.
+
+En paralelo, mantenemos los [SVG técnicos versionados y sus PNG exportados automáticamente](assets/carousel/README.md) para documentación, mantenimiento y slides donde necesitamos una representación más precisa y editable de la arquitectura.
+
+En resumen:
+
+- ✨ **Ilustraciones ElfoDesk** → storytelling, README y presentación
+- 🛠️ **SVG/PNG técnicos** → arquitectura, documentación y evolución del proyecto
 
 ## 🎁 ¿Qué hay dentro de la caja?
 
